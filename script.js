@@ -81,10 +81,10 @@ const PROJECTS = [
 
 const EXPERIENCE = [
   {
-    emoji: "🔬",
+    emoji: "💼",
     period: "Aug 2025 – Oct 2025",
     role: "Software Quality Engineering & Test Automation",
-    company: "Madanapalle Institute of Technology & Science",
+    company: "DML Logics",
     desc: "Applied software testing principles to improve code reliability and system quality. Designed and automated test scenarios using Java and Selenium WebDriver. Understood software development lifecycle, defect tracking, and quality workflows. Collaborated using JIRA in simulated Agile environments. Practiced regression testing and test design with a focus on improving system stability.",
     tags: ["Selenium WebDriver", "Java", "TestNG", "JIRA", "Agile Testing"],
   },
