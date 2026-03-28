@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonala Dileep Kumar Achari | Java Developer & QA Engineer</title>
+    <meta
+      name="description"
+      content="Bonala Dileep Kumar Achari – B.Tech CSE graduate skilled in Java, Python, Selenium WebDriver, TestNG, and Web Development. Open to opportunities."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ══════════════ CURSOR ══════════════ -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ══════════════ LOADER ══════════════ -->
+    <div class="loader" id="loader">
+      <div class="loader-inner">
+        <div class="loader-logo">BDK</div>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+        <p class="loader-text">Loading Experience...</p>
+      </div>
+    </div>
+
+    <!-- ══════════════ NAVBAR ══════════════ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>BDK<span class="logo-bracket"
+            >/&gt;</span
+          >
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+          <li>
+            <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-text="Projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#experience" class="nav-link" data-text="Experience"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#certifications" class="nav-link" data-text="Certs"
+              >Certs</a
+            >
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn-outline nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section class="hero" id="hero">
+      <canvas class="hero-canvas" id="heroCanvas"></canvas>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for work
+        </div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="name-line" id="heroName"
+            >Bonala Dileep Kumar Achari</span
+          >
+        </h1>
+        <div class="hero-role">
+          <span class="role-prefix">I build</span>
+          <div class="role-rotator">
+            <span class="role-item" data-active>Java Applications</span>
+            <span class="role-item">ML Solutions</span>
+            <span class="role-item">Web Projects</span>
+            <span class="role-item">QA Automation</span>
+          </div>
+        </div>
+        <p class="hero-desc">
+          B.Tech CSE graduate (86%) from MITS with hands-on experience in Java,
+          Python, Selenium WebDriver, and ML. Passionate about writing clean
+          code and building quality software.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-count="3">0</span
+            ><span class="stat-plus">+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="86">0</span
+            ><span class="stat-plus">%</span>
+            <span class="stat-label">B.Tech CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="1">0</span
+            ><span class="stat-plus">+</span>
+            <span class="stat-label">Internship</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-ring ring-3"></div>
+          <div class="hero-avatar">
+            <div class="avatar-inner">
+              <img src="./Dimage.jpg" alt="">
+                <defs>
+                  <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#a78bfa" />
+                    <stop offset="100%" stop-color="#6d28d9" />
+                  </radialGradient>
+                </defs>
+                <circle cx="100" cy="80" r="40" fill="url(#g1)" />
+                <ellipse cx="100" cy="165" rx="60" ry="45" fill="url(#g1)" />
+              </svg>
+            </div>
+          </div>
+          <div class="avatar-card card-1">
+            <span class="card-icon">⚡</span>
+            <div>
+              <p class="card-title">Fast Learner</p>
+              <p class="card-sub">Always growing</p>
+            </div>
+          </div>
+          <div class="avatar-card card-2">
+            <span class="card-icon">🏆</span>
+            <div>
+              <p class="card-title">Problem Solver</p>
+              <p class="card-sub">Code-focused</p>
+            </div>
+          </div>
+          <div class="avatar-card card-3">
+            <span class="card-icon">🚀</span>
+            <div>
+              <p class="card-title">100% Passion</p>
+              <p class="card-sub">Driven developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-tag">Who I Am</div>
+        <div class="about-grid">
+          <div class="about-left reveal-left">
+            <div class="about-image-wrapper">
+              <div class="about-image-bg"></div>
+              <div class="about-image">
+                <img src="./Dileep.jpg" alt="">
+                  <defs>
+                    <linearGradient
+                      id="aboutGrad"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop offset="0%" stop-color="#7c3aed" />
+                      <stop offset="100%" stop-color="#db2777" />
+                    </linearGradient>
+                  </defs>
+                  <rect
+                    width="300"
+                    height="360"
+                    rx="24"
+                    fill="url(#aboutGrad)"
+                    opacity="0.15"
+                  />
+                  <circle
+                    cx="150"
+                    cy="130"
+                    r="65"
+                    fill="url(#aboutGrad)"
+                    opacity="0.8"
+                  />
+                  <ellipse
+                    cx="150"
+                    cy="310"
+                    rx="100"
+                    ry="70"
+                    fill="url(#aboutGrad)"
+                    opacity="0.8"
+                  />
+                  <circle cx="150" cy="130" r="55" fill="#1e1b4b" />
+                  <circle cx="150" cy="115" r="28" fill="url(#aboutGrad)" />
+                  <ellipse
+                    cx="150"
+                    cy="175"
+                    rx="42"
+                    ry="30"
+                    fill="url(#aboutGrad)"
+                  />
+                </svg>
+              </div>
+              <div class="about-exp-badge">
+                <strong>Java Full Stack </strong>
+                <span>Developer</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-right reveal-right">
+            <h2 class="section-title">
+              Building With <span class="gradient-text">Purpose</span>
+            </h2>
+            <p class="about-text">
+              I am <strong>Bonala Dileep Kumar Achari</strong>, a B.Tech
+              Computer Science & Engineering graduate (86%) from Madanapalle
+              Institute of Technology & Science. I enjoy solving real-world
+              problems through clean, efficient code spanning Java applications,
+              ML pipelines, and web interfaces.
+            </p>
+            <p class="about-text">
+              With hands-on experience in Java, Python, Selenium WebDriver, and
+              ML techniques, I am passionate about software quality and
+              continuous learning. I completed a web development internship at
+              InternPe and have a strong academic foundation backed by a 95% SSC
+              score.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">☕</div>
+                <div>
+                  <h4>Java & Python</h4>
+                  <p>OOP & problem solving</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🔬</div>
+                <div>
+                  <h4>QA Automation</h4>
+                  <p>Selenium, TestNG, JIRA</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🤖</div>
+                <div>
+                  <h4>ML & Data Science</h4>
+                  <p>scikit-learn & Python</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🌐</div>
+                <div>
+                  <h4>Web Development</h4>
+                  <p>HTML, CSS, JavaScript</p>
+                </div>
+              </div>
+            </div>
+            <a href="./DResume.pdf" download="Dileep_Resume.pdf" class="btn btn-primary"
+              >Download Resume
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ SKILLS ══════════════ -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-tag">What I Know</div>
+        <h2 class="section-title text-center">
+          My <span class="gradient-text">Tech Stack</span>
+        </h2>
+        <p class="section-sub text-center">
+          Technologies I use to bring ideas to life
+        </p>
+
+        <div class="skills-tabs">
+          <button class="tab-btn active" data-tab="frontend" id="tab-frontend">
+            Languages
+          </button>
+          <button class="tab-btn" data-tab="backend" id="tab-backend">
+            QA &amp; Testing
+          </button>
+          <button class="tab-btn" data-tab="tools" id="tab-tools">
+            Tools &amp; IDEs
+          </button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- filled by JS -->
+        </div>
+
+        <div class="skills-marquee">
+          <div class="marquee-track">
+            <span>Java</span><span>Python</span><span>HTML5</span
+            ><span>CSS3</span> <span>JavaScript</span><span>MySQL</span
+            ><span>Selenium</span><span>TestNG</span> <span>JIRA</span
+            ><span>GitHub</span><span>Eclipse</span><span>VS Code</span>
+            <span>Java</span><span>Python</span><span>HTML5</span
+            ><span>CSS3</span> <span>JavaScript</span><span>MySQL</span
+            ><span>Selenium</span><span>TestNG</span> <span>JIRA</span
+            ><span>GitHub</span><span>Eclipse</span><span>VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ PROJECTS ══════════════ -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-tag">What I've Built</div>
+        <h2 class="section-title text-center">
+          Featured <span class="gradient-text">Projects</span>
+        </h2>
+        <p class="section-sub text-center">A selection of work I'm proud of</p>
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all" id="filter-all">
+            All
+          </button>
+          <button class="filter-btn" data-filter="java" id="filter-java">
+            Java
+          </button>
+          <button class="filter-btn" data-filter="python" id="filter-python">
+            Python / ML
+          </button>
+          <button class="filter-btn" data-filter="web" id="filter-web">
+            Web
+          </button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ EXPERIENCE ══════════════ -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-tag">Career & Education</div>
+        <h2 class="section-title text-center">
+          Experience &amp; <span class="gradient-text">Education</span>
+        </h2>
+
+        <div class="timeline" id="timeline">
+          <!-- filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CERTIFICATIONS ══════════════ -->
+    <section class="section testimonials" id="certifications">
+      <div class="container">
+        <div class="section-tag">Credentials &amp; Wins</div>
+        <h2 class="section-title text-center">
+          Certifications &amp; <span class="gradient-text">Achievements</span>
+        </h2>
+        <p class="section-sub text-center">
+          Courses, certificates, and competitions that shaped my skills
+        </p>
+        <div class="projects-grid" id="certsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CONTACT ══════════════ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title text-center">
+          Let's <span class="gradient-text">Connect</span>
+        </h2>
+        <p class="section-sub text-center">
+          Have a project in mind? Let's build something amazing.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <h3>Let's work together</h3>
+            <p>
+              I'm currently available for freelance projects, full-time
+              positions, and exciting collaborations. Whether you have a
+              question or just want to say hi, I'll do my best to get back to
+              you!
+            </p>
+            <div class="contact-items">
+              <a
+                href="mailto:bonaladileep5159@gmail.com"
+                class="contact-item"
+                id="contact-email"
+              >
+                <div class="contact-item-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-label">Email</p>
+                  <p class="contact-value">bonaladileep5159@gmail.com</p>
+                </div>
+              </a>
+              <a
+                href="tel:+919640674463"
+                class="contact-item"
+                id="contact-phone"
+              >
+                <div class="contact-item-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 15z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-label">Phone</p>
+                  <p class="contact-value">+91 9640674463</p>
+                </div>
+              </a>
+              <div class="contact-item" id="contact-location">
+                <div class="contact-item-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-label">Location</p>
+                  <p class="contact-value">Andhra Pradesh, India</p>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="social-link"
+                id="social-github"
+                aria-label="GitHub"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/dileep-dev/"
+                target="_blank"
+                class="social-link"
+                id="social-linkedin"
+                aria-label="LinkedIn"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24H22.23c.979 0 1.771-.773 1.771-1.729V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="mailto:bonaladileep5159@gmail.com"
+                class="social-link"
+                id="social-email"
+                aria-label="Email"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal-right" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Project Inquiry"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-full"
+              id="submitBtn"
+            >
+              <span id="btnText">Send Message</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <span>✅</span> Thank you! I'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>BDK<span class="logo-bracket"
+              >/&gt;</span
+            >
+          </a>
+          <p>Building quality software, one line of code at a time.</p>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2025 Bonala Dileep Kumar Achari · Designed &amp; Developed with ❤️
+          </p>
+          <a href="#hero" class="back-to-top" id="backToTop">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M18 15l-6-6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
